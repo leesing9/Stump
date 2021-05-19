@@ -17,13 +17,13 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#292637"
+        android:background="#FFFFFF"
         android:elevation="2dp"
         app:abb_animationDuration="600"
         app:abb_indicatorColor="#fd907e"
         app:abb_selectedIndex="1"
         app:abb_tabAnimation="fade"
-        app:abb_tabColor="#FFF"
+        app:abb_tabColor="#000000"
         app:abb_tabColorSelected="#fd907e"
         app:abb_tabs="@menu/menu" />
 

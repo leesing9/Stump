@@ -11,6 +11,7 @@ import com.achmadqomarudin.animatedbottombar.R;
 public class FirstActivity extends AppCompatActivity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +24,7 @@ public class FirstActivity extends AppCompatActivity {
         mHandler.postDelayed(new Runnable() {
             public void run() {
                 // 시간 지난 후 실행할 코딩
-                Intent intent = new Intent(FirstActivity.this, MainActivity.class);
+                Intent intent = new Intent(FirstActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         }, 1500);

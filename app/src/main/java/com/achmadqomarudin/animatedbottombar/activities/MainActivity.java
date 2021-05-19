@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.achmadqomarudin.animatedbottombar.R;
 import com.achmadqomarudin.animatedbottombar.fragments.CommunityFragment;
@@ -23,12 +27,11 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     AnimatedBottomBar animatedBottomBar;
     FragmentManager fragmentManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        setTitle("Example 3");
+
 
         animatedBottomBar = findViewById(R.id.animatedBottomBar);
 
@@ -60,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.mypage:
                         fragment = new MypageFragment();
                         break;
+
+                    case R.id.mypage_frag2:
+                        fragment = new MypageFragment();
+                        break;
+
+                    case R.id.mypage_frag3:
+                        fragment = new MypageFragment();
+                        break;
                 }
 
                 if (fragment != null) {
@@ -72,4 +83,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void mOnPopupClick_setgps(View v) {
+        //데이터 담아서 팝업(액티비티) 호출
+        Intent intent = new Intent(this, SetgpsActivity.class);
+        startActivityForResult(intent, 1);
+    }
+
+
+    //버튼
 }
