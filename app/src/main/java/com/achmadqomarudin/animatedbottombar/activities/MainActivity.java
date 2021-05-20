@@ -15,6 +15,8 @@ import android.widget.Toast;
 import com.achmadqomarudin.animatedbottombar.R;
 import com.achmadqomarudin.animatedbottombar.fragments.CommunityFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment;
+import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment_frag2;
+import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment_frag3;
 import com.achmadqomarudin.animatedbottombar.fragments.RequestFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.QuestFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.HomeFragment;
@@ -31,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
 
         animatedBottomBar = findViewById(R.id.animatedBottomBar);
 
@@ -61,14 +62,6 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new CommunityFragment();
                         break;
                     case R.id.mypage:
-                        fragment = new MypageFragment();
-                        break;
-
-                    case R.id.mypage_frag2:
-                        fragment = new MypageFragment();
-                        break;
-
-                    case R.id.mypage_frag3:
                         fragment = new MypageFragment();
                         break;
                 }

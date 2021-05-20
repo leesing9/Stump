@@ -29,12 +29,6 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="21dp"
-                        android:gravity="right"
-                        android:orientation="vertical" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center|left"
                         android:orientation="horizontal">
@@ -54,23 +48,25 @@
 
                                 <ImageView
                                     android:id="@+id/imageView21"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:src="@drawable/gru_icon" />
+                                    android:layout_width="11dp"
+                                    android:layout_height="15dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/place_icon" />
 
                                 <TextView
                                     android:id="@+id/settext_place"
                                     android:layout_width="126dp"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
                                     android:gravity="center|left"
                                     android:text="장소를 지정해주세요"
                                     android:textColor="#FFFFFF" />
 
                                 <ImageView
                                     android:id="@+id/imageView34"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:src="@drawable/gru_icon" />
+                                    android:layout_width="8dp"
+                                    android:layout_height="4dp"
+                                    android:src="@drawable/downarrow_icon" />
 
                             </LinearLayout>
 
@@ -79,7 +75,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:layout_marginTop="20dp"
+                                android:layout_marginTop="40dp"
                                 android:text="오늘은 어떤 챌린지에\n도전해볼까요?"
                                 android:textColor="#FFFFFF"
                                 android:textSize="20dp" />
@@ -87,10 +83,10 @@
 
                         <ImageView
                             android:id="@+id/imageView6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:src="@drawable/gru_icon" />
+                            android:layout_width="200dp"
+                            android:layout_height="350dp"
+                            android:layout_marginTop="80dp"
+                            android:src="@drawable/home_people" />
 
 
                     </LinearLayout>
@@ -135,7 +131,7 @@
                                             android:layout_height="wrap_content"
                                             android:text="My 챌린지"
                                             android:textColor="#000000"
-                                            android:textSize="20sp"
+                                            android:textSize="14sp"
                                             android:textStyle="bold" />
 
                                         <LinearLayout
@@ -173,28 +169,24 @@
 
                                                 <ImageView
                                                     android:id="@+id/imageView4"
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:layout_width="200dp"
+                                                    android:layout_height="160dp"
+                                                    android:src="@drawable/recommend_01" />
 
                                                 <ImageView
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:layout_width="200dp"
+                                                    android:layout_height="160dp"
+                                                    android:src="@drawable/recommend_02" />
 
                                                 <ImageView
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:layout_width="200dp"
+                                                    android:layout_height="160dp"
+                                                    android:src="@drawable/recommend_03" />
 
                                                 <ImageView
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:layout_width="200dp"
+                                                    android:layout_height="160dp"
+                                                    android:src="@drawable/recommend_04" />
                                             </LinearLayout>
                                         </LinearLayout>
                                     </HorizontalScrollView>
@@ -217,7 +209,7 @@
                                             android:layout_height="wrap_content"
                                             android:text="인기 챌린지"
                                             android:textColor="#000000"
-                                            android:textSize="20sp"
+                                            android:textSize="14sp"
                                             android:textStyle="bold" />
 
                                         <LinearLayout
@@ -248,28 +240,24 @@
                                             android:orientation="horizontal">
 
                                             <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
+                                                android:layout_width="200dp"
+                                                android:layout_height="160dp"
+                                                android:src="@drawable/recommend_01" />
 
                                             <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
+                                                android:layout_width="200dp"
+                                                android:layout_height="160dp"
+                                                android:src="@drawable/recommend_02" />
 
                                             <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
+                                                android:layout_width="200dp"
+                                                android:layout_height="160dp"
+                                                android:src="@drawable/recommend_03" />
 
                                             <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
+                                                android:layout_width="200dp"
+                                                android:layout_height="160dp"
+                                                android:src="@drawable/recommend_04" />
                                         </LinearLayout>
                                     </HorizontalScrollView>
 
@@ -299,65 +287,55 @@
                                                 android:orientation="horizontal">
 
                                                 <ImageView
-                                                    android:layout_width="30dp"
-                                                    android:layout_height="30dp"
-                                                    android:src="@drawable/gru_icon"
-                                                    android:textSize="20sp" />
+                                                    android:id="@+id/imageView16"
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    app:srcCompat="@drawable/home_camera_icon" />
 
                                                 <TextView
                                                     android:layout_width="145dp"
                                                     android:layout_height="wrap_content"
-                                                    android:text="이달의 인증샷"
+                                                    android:text=" 이달의 인증샷"
                                                     android:textColor="#000000"
-                                                    android:textSize="20sp"
+                                                    android:textSize="14sp"
                                                     android:textStyle="bold" />
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
-                                                    android:gravity="right"
+                                                    android:gravity="center|right"
                                                     android:orientation="horizontal">
 
-                                                    <TextView
-                                                        android:layout_width="75dp"
-                                                        android:layout_height="match_parent"
+                                                    <ImageView
+                                                        android:id="@+id/imageView29"
+                                                        android:layout_width="10dp"
+                                                        android:layout_height="10dp"
                                                         android:layout_marginRight="10dp"
-                                                        android:gravity="center"
-                                                        android:text="전체보기"
-                                                        android:textColor="#BAAFAF" />
+                                                        app:srcCompat="@drawable/rightarrow_icon" />
                                                 </LinearLayout>
 
                                             </LinearLayout>
 
-                                            <HorizontalScrollView
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content">
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
 
-                                                <LinearLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:gravity="center"
-                                                    android:orientation="horizontal">
+                                                <ImageView
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="150dp"
+                                                    android:layout_margin="4dp"
+                                                    android:src="@drawable/home_auth_01" />
 
-                                                    <ImageView
-                                                        android:layout_width="150dp"
-                                                        android:layout_height="150dp"
-                                                        android:layout_margin="5dp"
-                                                        android:src="@drawable/gru_icon" />
+                                                <ImageView
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="150dp"
+                                                    android:layout_margin="4dp"
+                                                    android:src="@drawable/home_auth_02" />
 
-                                                    <ImageView
-                                                        android:layout_width="150dp"
-                                                        android:layout_height="150dp"
-                                                        android:layout_margin="5dp"
-                                                        android:src="@drawable/gru_icon" />
-
-                                                    <ImageView
-                                                        android:layout_width="150dp"
-                                                        android:layout_height="150dp"
-                                                        android:layout_margin="5dp"
-                                                        android:src="@drawable/gru_icon" />
-                                                </LinearLayout>
-                                            </HorizontalScrollView>
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
@@ -374,19 +352,20 @@
                                                 android:orientation="horizontal">
 
                                                 <ImageView
-                                                    android:id="@+id/imageView2"
-                                                    android:layout_width="30dp"
-                                                    android:layout_height="30dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:id="@+id/imageView28"
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    app:srcCompat="@drawable/home_medal_icon" />
 
                                                 <TextView
                                                     android:id="@+id/textView11"
-                                                    android:layout_width="145dp"
+                                                    android:layout_width="181dp"
                                                     android:layout_height="wrap_content"
-                                                    android:text="이달의 챌린저"
+                                                    android:text=" 이달의 챌린저"
                                                     android:textColor="#000000"
-                                                    android:textSize="20sp"
+                                                    android:textSize="14sp"
                                                     android:textStyle="bold" />
+
                                             </LinearLayout>
 
                                             <LinearLayout
@@ -400,13 +379,14 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_margin="3dp"
                                                     android:text="1"
+                                                    android:textColor="#000000"
                                                     android:textStyle="bold" />
 
                                                 <ImageView
                                                     android:layout_width="30dp"
                                                     android:layout_height="30dp"
                                                     android:layout_margin="3dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:src="@drawable/home_profile_1" />
 
                                                 <TextView
                                                     android:id="@+id/textView15"
@@ -414,14 +394,17 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_margin="3dp"
                                                     android:text="노란색신호등"
+                                                    android:textColor="#000000"
+                                                    android:textSize="12sp"
                                                     android:textStyle="bold" />
 
                                                 <ImageView
-                                                    android:id="@+id/imageView12"
-                                                    android:layout_width="30dp"
-                                                    android:layout_height="30dp"
-                                                    android:layout_margin="3dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:id="@+id/imageView30"
+                                                    android:layout_width="10dp"
+                                                    android:layout_height="10dp"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_weight="1"
+                                                    app:srcCompat="@drawable/rightarrow_icon" />
 
                                             </LinearLayout>
 
@@ -441,13 +424,14 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_margin="3dp"
                                                     android:text="2"
+                                                    android:textColor="#000000"
                                                     android:textStyle="bold" />
 
                                                 <ImageView
                                                     android:layout_width="30dp"
                                                     android:layout_height="30dp"
                                                     android:layout_margin="3dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:src="@drawable/home_profile_2" />
 
                                                 <TextView
                                                     android:id="@+id/textView16"
@@ -455,14 +439,17 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_margin="3dp"
                                                     android:text="반달가슴곰"
+                                                    android:textColor="#000000"
+                                                    android:textSize="12sp"
                                                     android:textStyle="bold" />
 
                                                 <ImageView
-                                                    android:id="@+id/imageView7"
-                                                    android:layout_width="30dp"
-                                                    android:layout_height="30dp"
-                                                    android:layout_margin="3dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:id="@+id/imageView8"
+                                                    android:layout_width="10dp"
+                                                    android:layout_height="10dp"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_weight="1"
+                                                    app:srcCompat="@drawable/rightarrow_icon" />
 
                                             </LinearLayout>
 
@@ -484,6 +471,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_margin="3dp"
                                                     android:text="3"
+                                                    android:textColor="#000000"
                                                     android:textStyle="bold" />
 
                                                 <ImageView
@@ -491,7 +479,7 @@
                                                     android:layout_width="30dp"
                                                     android:layout_height="30dp"
                                                     android:layout_margin="3dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:src="@drawable/home_profile_3" />
 
                                                 <TextView
                                                     android:id="@+id/textView17"
@@ -499,14 +487,18 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_margin="3dp"
                                                     android:text="알파카"
+                                                    android:textColor="#000000"
+                                                    android:textSize="12sp"
                                                     android:textStyle="bold" />
 
                                                 <ImageView
-                                                    android:id="@+id/imageView8"
-                                                    android:layout_width="30dp"
-                                                    android:layout_height="30dp"
-                                                    android:layout_margin="3dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:id="@+id/imageView12"
+                                                    android:layout_width="10dp"
+                                                    android:layout_height="10dp"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_weight="1"
+                                                    app:srcCompat="@drawable/rightarrow_icon" />
+
                                             </LinearLayout>
 
                                             <View

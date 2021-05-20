@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     tools:context=".fragments.HomeFragment"
     android:background="#FFFFFF">
 
@@ -30,13 +29,13 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_width="362dp"
+                        android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:gravity="center"
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="310dp"
+                            android:layout_width="330dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:background="@drawable/btn_input"
@@ -45,14 +44,15 @@
 
                             <ImageView
                                 android:id="@+id/imageView13"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:src="@drawable/gru_icon"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:src="@drawable/find_icon"
                                 android:textSize="20sp" />
 
                             <EditText
                                 android:id="@+id/Date"
-                                android:layout_width="251dp"
+                                android:layout_width="280dp"
                                 android:layout_height="wrap_content"
                                 android:clickable="true"
                                 android:editable="false"
@@ -67,9 +67,9 @@
 
                         <ImageView
                             android:id="@+id/imageView14"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/gru_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/filter_icon"
                             android:textSize="20sp" />
                     </LinearLayout>
 
@@ -96,98 +96,136 @@
                                     android:orientation="horizontal">
 
                                     <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:gravity="center"
+                                        android:onClick="mOnPopupClick_Questtab1"
                                         android:orientation="vertical">
 
                                         <ImageView
-                                            android:layout_width="80dp"
-                                            android:layout_height="80dp"
-                                            android:layout_margin="5dp"
-                                            android:src="@drawable/gru_icon" />
+                                            android:id="@+id/login2tab1"
+                                            android:layout_width="66dp"
+                                            android:layout_height="66dp"
+                                            app:srcCompat="@drawable/quest_icon1" />
 
                                         <TextView
-                                            android:id="@+id/textView19"
-                                            android:layout_width="match_parent"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:gravity="center"
-                                            android:text="라이프" />
+                                            android:layout_weight="1"
+                                            android:text="운동"
+                                            android:textColor="#000000" />
+
                                     </LinearLayout>
 
                                     <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:gravity="center"
+                                        android:onClick="mOnPopupClick_Questtab2"
                                         android:orientation="vertical">
 
                                         <ImageView
-                                            android:layout_width="80dp"
-                                            android:layout_height="80dp"
-                                            android:layout_margin="5dp"
-                                            android:src="@drawable/gru_icon" />
+                                            android:id="@+id/login2tab2"
+                                            android:layout_width="66dp"
+                                            android:layout_height="66dp"
+                                            app:srcCompat="@drawable/quest_icon2" />
 
                                         <TextView
-                                            android:layout_width="match_parent"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:gravity="center"
-                                            android:text="운동" />
+                                            android:layout_weight="1"
+                                            android:text="외국어"
+                                            android:textColor="#000000" />
+
                                     </LinearLayout>
 
                                     <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:gravity="center"
+                                        android:onClick="mOnPopupClick_Questtab3"
                                         android:orientation="vertical">
 
                                         <ImageView
-                                            android:layout_width="80dp"
-                                            android:layout_height="80dp"
-                                            android:layout_margin="5dp"
-                                            android:src="@drawable/gru_icon" />
+                                            android:id="@+id/login2tab3"
+                                            android:layout_width="66dp"
+                                            android:layout_height="66dp"
+                                            app:srcCompat="@drawable/quest_icon3" />
 
                                         <TextView
-                                            android:id="@+id/textView14"
-                                            android:layout_width="match_parent"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:gravity="center"
-                                            android:text="크리에이터" />
+                                            android:layout_weight="1"
+                                            android:text="공예·예술"
+                                            android:textColor="#000000" />
+
                                     </LinearLayout>
 
                                     <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:gravity="center"
+                                        android:onClick="mOnPopupClick_Questtab4"
                                         android:orientation="vertical">
 
                                         <ImageView
-                                            android:layout_width="80dp"
-                                            android:layout_height="80dp"
-                                            android:layout_margin="5dp"
-                                            android:src="@drawable/gru_icon" />
+                                            android:id="@+id/login2tab4"
+                                            android:layout_width="66dp"
+                                            android:layout_height="66dp"
+                                            app:srcCompat="@drawable/quest_icon4" />
 
                                         <TextView
-                                            android:id="@+id/textView18"
-                                            android:layout_width="match_parent"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:gravity="center"
-                                            android:text="뷰티·패션" />
+                                            android:layout_weight="1"
+                                            android:text="뷰티·패션"
+                                            android:textColor="#000000" />
+
                                     </LinearLayout>
 
                                     <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:gravity="center"
+                                        android:onClick="mOnPopupClick_Questtab5"
                                         android:orientation="vertical">
 
                                         <ImageView
-                                            android:layout_width="80dp"
-                                            android:layout_height="80dp"
-                                            android:layout_margin="5dp"
-                                            android:src="@drawable/gru_icon" />
+                                            android:id="@+id/login2tab5"
+                                            android:layout_width="66dp"
+                                            android:layout_height="66dp"
+                                            app:srcCompat="@drawable/quest_icon5" />
 
                                         <TextView
-                                            android:layout_width="match_parent"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:gravity="center"
-                                            android:text="외국어" />
+                                            android:layout_weight="1"
+                                            android:text="크리에이터"
+                                            android:textColor="#000000" />
+
                                     </LinearLayout>
 
+                                    <LinearLayout
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:gravity="center"
+                                        android:onClick="mOnPopupClick_Questtab6"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/login2tab6"
+                                            android:layout_width="66dp"
+                                            android:layout_height="66dp"
+                                            app:srcCompat="@drawable/quest_icon6" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="IT·컴퓨터"
+                                            android:textColor="#000000" />
+
+                                    </LinearLayout>
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -232,16 +270,11 @@
                                             android:id="@+id/textView3"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="시원한 액티비티가🌊 기다려지는 7월"
-                                            android:textSize="16sp"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="건강한 몸에 건강한 정신이 깃든다!\n 몸 튼튼 마음 튼튼💪"
+                                            android:textSize="14sp"
                                             android:textStyle="bold" />
 
-                                        <ImageView
-                                            android:id="@+id/imageView15"
-                                            android:layout_width="30dp"
-                                            android:layout_height="30dp"
-                                            android:src="@drawable/gru_icon"
-                                            android:textSize="20sp" />
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -278,28 +311,14 @@
 
                                                 <ImageView
                                                     android:id="@+id/imageView4"
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:layout_width="200dp"
+                                                    android:layout_height="160dp"
+                                                    android:src="@drawable/quest_01" />
 
                                                 <ImageView
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
-
-                                                <ImageView
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
-
-                                                <ImageView
-                                                    android:layout_width="180dp"
-                                                    android:layout_height="120dp"
-                                                    android:layout_margin="5dp"
-                                                    android:src="@drawable/gru_icon" />
+                                                    android:layout_width="200dp"
+                                                    android:layout_height="160dp"
+                                                    android:src="@drawable/quest_02" />
                                             </LinearLayout>
                                         </LinearLayout>
                                     </HorizontalScrollView>
@@ -359,28 +378,15 @@
                                             android:orientation="horizontal">
 
                                             <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
+                                                android:layout_width="200dp"
+                                                android:layout_height="160dp"
+                                                android:src="@drawable/quest_03" />
 
                                             <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
+                                                android:layout_width="200dp"
+                                                android:layout_height="160dp"
+                                                android:src="@drawable/quest_04" />
 
-                                            <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
-
-                                            <ImageView
-                                                android:layout_width="180dp"
-                                                android:layout_height="120dp"
-                                                android:layout_margin="5dp"
-                                                android:src="@drawable/gru_icon" />
                                         </LinearLayout>
                                     </HorizontalScrollView>
 

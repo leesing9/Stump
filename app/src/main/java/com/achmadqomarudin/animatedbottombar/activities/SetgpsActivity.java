@@ -27,6 +27,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.achmadqomarudin.animatedbottombar.KakaoUser;
 import com.achmadqomarudin.animatedbottombar.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -169,9 +171,11 @@ public class SetgpsActivity extends AppCompatActivity implements OnMapReadyCallb
             if(addr!=null){
                 if(addr.length()<14){
                     intent.putExtra("place",addr.substring(5));
+                    KakaoUser.myplace = addr.substring(5);
                     startActivity(intent);}
                 else {
                     intent.putExtra("place",addr.substring(5,14)+"...");
+                    KakaoUser.myplace = addr.substring(5,14)+"...";
                     startActivity(intent);}
                 }
             }

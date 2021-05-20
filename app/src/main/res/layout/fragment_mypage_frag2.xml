@@ -78,7 +78,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView16"
+                            android:id="@+id/myprofile"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/gru_icon" />
@@ -90,7 +90,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView21"
+                                android:id="@+id/mynickname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5dp"
@@ -114,7 +114,7 @@
                                     android:textSize="20sp" />
 
                                 <TextView
-                                    android:id="@+id/textView20"
+                                    android:id="@+id/myplace"
                                     android:layout_width="240dp"
                                     android:layout_height="wrap_content"
                                     android:text="금호동 2가"
