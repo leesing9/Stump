@@ -36,6 +36,7 @@ public class HomeFragment extends Fragment {
             String name = intent.getExtras().getString("place");
             settext_place.setText(name);
         }
+
         return v;
 
     }

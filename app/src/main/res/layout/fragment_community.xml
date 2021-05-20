@@ -27,31 +27,29 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="328dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:gravity="left|center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="275dp"
-                            android:layout_height="30dp"
-                            android:gravity="center"
-                            android:text="탐색"
-                            android:textColor="#000000"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                         <ImageView
                             android:id="@+id/imageView14"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
                             android:src="@drawable/find_icon2"
                             android:textSize="20sp" />
 
-                    </LinearLayout>
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="탐색"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
 
                 </LinearLayout>
 

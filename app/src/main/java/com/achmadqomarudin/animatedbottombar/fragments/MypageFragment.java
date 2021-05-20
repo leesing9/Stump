@@ -1,10 +1,12 @@
 package com.achmadqomarudin.animatedbottombar.fragments;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -26,6 +28,8 @@ public class MypageFragment extends Fragment {
     ImageView myprofile;
     TextView mynickname;
     TextView myplace;
+    Button mypage_frag2;
+    Button mypage_frag3;
     public MypageFragment() {
         // Required empty public constructor
     }
@@ -38,6 +42,8 @@ public class MypageFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_mypage, container, false);
 
 
+        mypage_frag2 = v.findViewById(R.id.mypage_frag2);
+        mypage_frag3 = v.findViewById(R.id.mypage_frag3);
 
         myprofile = v.findViewById(R.id.myprofile);
         mynickname = v.findViewById(R.id.mynickname);
@@ -50,6 +56,17 @@ public class MypageFragment extends Fragment {
         if(KakaoUser.myplace!=null) {
             myplace.setText(KakaoUser.myplace);
         }
+
+
+        mypage_frag2.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.mypage_frag2) {
+                    Intent intent = new Intent(getActivity(), MypageFragment_frag2.class);
+                    startActivity(intent);
+                }
+            }
+        }));
 
         return v;
     }
