@@ -15,5 +15,6 @@
 <string name="swap_to_the_tab">Swap to the songs tab and touch the (⋮) sign which located at every songs right side , and choose Update Data</string>   <string name="update_easily">You can update Song/Singer Name, Album and Genre data easily</string>
 <string name="after_updating">After updating data album cover, wiki information of artist and genre screens looks brilliant, don\'t forget to do this process for the other songs of you</string>
 
-
+        <string name="tab_text_1">Tab 1</string>
+        <string name="tab_text_2">Tab 2</string>
 </resources>
