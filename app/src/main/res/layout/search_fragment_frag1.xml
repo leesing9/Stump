@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <!--tools:context=".fragments.SearchFragment"  위의 속성으로 추가, SearchFragment 만들어야함 -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="검색 기록 지우기"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/search_roundcategory"
+            android:text="등산" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/search_roundcategory"
+            android:text="공연" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/search_roundcategory"
+            android:text="트로트" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/search_roundcategory"
+            android:text="음악" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/search_roundcategory"
+            android:text="운동" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/search_roundcategory"
+            android:text="와인" />
+    </LinearLayout>
+</LinearLayout>

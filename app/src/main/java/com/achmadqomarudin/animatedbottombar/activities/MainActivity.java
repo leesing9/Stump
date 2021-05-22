@@ -9,17 +9,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.achmadqomarudin.animatedbottombar.R;
+import com.achmadqomarudin.animatedbottombar.activities.fragments_questsearch.SearchquestActivity;
 import com.achmadqomarudin.animatedbottombar.fragments.CommunityFragment;
-import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment;
-import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment_frag2;
-import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment_frag3;
-import com.achmadqomarudin.animatedbottombar.fragments.RequestFragment;
-import com.achmadqomarudin.animatedbottombar.fragments.QuestFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.HomeFragment;
+import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment;
+import com.achmadqomarudin.animatedbottombar.fragments.QuestFragment;
+import com.achmadqomarudin.animatedbottombar.fragments.RequestFragment;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -84,5 +81,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //버튼
+
+
+    public void mOnClick_request(View v) {
+        //데이터 담아서 팝업(액티비티) 호출
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        Intent intent2 = new Intent(this, RequestPopupActivity.class);
+        startActivityForResult(intent2, 1);
+    }
+
+
+    public void mOnClick_searchquest(View v) {
+        //데이터 담아서 팝업(액티비티) 호출
+
+        Intent intent2 = new Intent(this, SearchquestActivity.class);
+        startActivityForResult(intent2, 1);
+    }
     //버튼
 }

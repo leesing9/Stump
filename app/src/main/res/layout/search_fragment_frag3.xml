@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <!--tools:context=".fragments.SearchFragment"  위의 속성으로 추가, SearchFragment 만들어야함 -->
+
+
+    // 중간 콘텐츠 부분
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="474dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가격"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="직접입력"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:background="@drawable/search_edittext_roundcorner"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0원"
+                android:textColor="#C4C4C4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="~" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:background="@drawable/search_edittext_roundcorner"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0원"
+                android:textColor="#C4C4C4"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#C4C4C4" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_roundlocation_reset"
+            android:text="재설정"
+            android:textColor="#4C6BFD"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_roundlocation_check"
+            android:text="320개 살펴보기"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

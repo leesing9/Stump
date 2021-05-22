@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment"
+    tools:context=".activities.MainActivity"
     android:background="#FFFFFF">
 
     <ScrollView
@@ -35,6 +35,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
+                            android:onClick="mOnClick_searchquest"
                             android:layout_width="330dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
@@ -309,17 +310,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:gravity="right"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                android:id="@+id/textView5"
-                                                android:layout_width="75dp"
-                                                android:layout_height="match_parent"
-                                                android:layout_marginRight="10dp"
-                                                android:gravity="center"
-                                                android:text="전체보기"
-                                                android:textColor="#BAAFAF" />
-                                        </LinearLayout>
+                                            android:orientation="horizontal"/>
 
                                     </LinearLayout>
 
@@ -383,16 +374,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:gravity="right"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                android:layout_width="75dp"
-                                                android:layout_height="match_parent"
-                                                android:layout_marginRight="10dp"
-                                                android:gravity="center"
-                                                android:text="전체보기"
-                                                android:textColor="#BAAFAF" />
-                                        </LinearLayout>
+                                            android:orientation="horizontal"/>
 
                                     </LinearLayout>
 
