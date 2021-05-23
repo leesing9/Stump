@@ -24,7 +24,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="195dp"
-                    android:background="@drawable/gradation"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -102,7 +101,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/radius"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -117,18 +117,20 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_margin="20dp"
+                                    android:layout_marginTop="10dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
                                         android:orientation="horizontal">
 
                                         <TextView
                                             android:id="@+id/textView3"
                                             android:layout_width="145dp"
                                             android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
                                             android:text="My 챌린지"
                                             android:textColor="#000000"
                                             android:textSize="14sp"
@@ -154,7 +156,8 @@
 
                                     <HorizontalScrollView
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:scrollbars="none">
 
                                         <LinearLayout
                                             android:layout_width="wrap_content"
@@ -169,23 +172,23 @@
 
                                                 <ImageView
                                                     android:id="@+id/imageView4"
-                                                    android:layout_width="200dp"
-                                                    android:layout_height="160dp"
+                                                    android:layout_width="210dp"
+                                                    android:layout_height="180dp"
                                                     android:src="@drawable/recommend_01" />
 
                                                 <ImageView
-                                                    android:layout_width="200dp"
-                                                    android:layout_height="160dp"
+                                                    android:layout_width="210dp"
+                                                    android:layout_height="180dp"
                                                     android:src="@drawable/recommend_02" />
 
                                                 <ImageView
-                                                    android:layout_width="200dp"
-                                                    android:layout_height="160dp"
+                                                    android:layout_width="210dp"
+                                                    android:layout_height="180dp"
                                                     android:src="@drawable/recommend_03" />
 
                                                 <ImageView
-                                                    android:layout_width="200dp"
-                                                    android:layout_height="160dp"
+                                                    android:layout_width="210dp"
+                                                    android:layout_height="180dp"
                                                     android:src="@drawable/recommend_04" />
                                             </LinearLayout>
                                         </LinearLayout>
@@ -196,17 +199,19 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_margin="20dp"
+                                    android:layout_marginTop="10dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
                                         android:orientation="horizontal">
 
                                         <TextView
                                             android:layout_width="145dp"
                                             android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
                                             android:text="인기 챌린지"
                                             android:textColor="#000000"
                                             android:textSize="14sp"
@@ -231,7 +236,8 @@
 
                                     <HorizontalScrollView
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:scrollbars="none">
 
                                         <LinearLayout
                                             android:layout_width="wrap_content"
@@ -240,24 +246,24 @@
                                             android:orientation="horizontal">
 
                                             <ImageView
-                                                android:layout_width="200dp"
-                                                android:layout_height="160dp"
-                                                android:src="@drawable/recommend_01" />
+                                                android:layout_width="210dp"
+                                                android:layout_height="180dp"
+                                                android:src="@drawable/recommend_04" />
 
                                             <ImageView
-                                                android:layout_width="200dp"
-                                                android:layout_height="160dp"
-                                                android:src="@drawable/recommend_02" />
-
-                                            <ImageView
-                                                android:layout_width="200dp"
-                                                android:layout_height="160dp"
+                                                android:layout_width="210dp"
+                                                android:layout_height="180dp"
                                                 android:src="@drawable/recommend_03" />
 
                                             <ImageView
-                                                android:layout_width="200dp"
-                                                android:layout_height="160dp"
-                                                android:src="@drawable/recommend_04" />
+                                                android:layout_width="210dp"
+                                                android:layout_height="180dp"
+                                                android:src="@drawable/recommend_02" />
+
+                                            <ImageView
+                                                android:layout_width="210dp"
+                                                android:layout_height="180dp"
+                                                android:src="@drawable/recommend_01" />
                                         </LinearLayout>
                                     </HorizontalScrollView>
 
@@ -266,15 +272,16 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_margin="20dp"
+                                    android:layout_marginTop="10dp"
                                     android:background="@drawable/radius2"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_margin="20dp"
-                                        android:orientation="vertical">
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -290,7 +297,7 @@
                                                     android:id="@+id/imageView16"
                                                     android:layout_width="25dp"
                                                     android:layout_height="25dp"
-                                                    app:srcCompat="@drawable/home_camera_icon" />
+                                                    android:src="@drawable/home_camera_icon" />
 
                                                 <TextView
                                                     android:layout_width="145dp"
@@ -308,32 +315,38 @@
 
                                                     <ImageView
                                                         android:id="@+id/imageView29"
-                                                        android:layout_width="10dp"
-                                                        android:layout_height="10dp"
+                                                        android:layout_width="20dp"
+                                                        android:layout_height="20dp"
                                                         android:layout_marginRight="10dp"
-                                                        app:srcCompat="@drawable/rightarrow_icon" />
+                                                        android:src="@drawable/rightarrow_icon" />
                                                 </LinearLayout>
 
                                             </LinearLayout>
 
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
+                                                android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
-                                                android:layout_margin="5dp"
                                                 android:gravity="center"
                                                 android:orientation="horizontal">
 
-                                                <ImageView
-                                                    android:layout_width="150dp"
-                                                    android:layout_height="150dp"
-                                                    android:layout_margin="4dp"
-                                                    android:src="@drawable/home_auth_01" />
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
 
-                                                <ImageView
-                                                    android:layout_width="150dp"
-                                                    android:layout_height="150dp"
-                                                    android:layout_margin="4dp"
-                                                    android:src="@drawable/home_auth_02" />
+                                                    <ImageView
+                                                        android:layout_width="180dp"
+                                                        android:layout_height="180dp"
+                                                        android:layout_margin="4dp"
+                                                        android:src="@drawable/home_auth_01" />
+
+                                                    <ImageView
+                                                        android:layout_width="180dp"
+                                                        android:layout_height="180dp"
+                                                        android:layout_margin="4dp"
+                                                        android:src="@drawable/home_auth_02" />
+                                                </LinearLayout>
 
                                             </LinearLayout>
 

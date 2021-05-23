@@ -100,14 +100,12 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <ImageButton
+                        <ImageView
+                            android:src="@drawable/camera"
                             android:id="@+id/imageButton12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="#FFFFFF"
-                            android:padding="10dp" />
+                            android:layout_gravity="center"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -164,17 +162,21 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <AutoCompleteTextView
-                        android:completionThreshold="0"
-                        android:id="@+id/category_edit"
+                    <TextView
+                        android:id="@+id/spinnertext1"
                         android:layout_width="219dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
-                        android:layout_weight="0"
                         android:background="@drawable/btn_input"
                         android:gravity="center"
-                        android:hint="카테고리 선택"
-                        android:paddingLeft="0dp" />
+                        android:hint="카테고리 선택" />
+
+                    <Spinner
+                        android:id="@+id/request_spinner2"
+                        android:layout_marginTop="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -201,9 +203,9 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <AutoCompleteTextView
+                    <TextView
                         android:completionThreshold="0"
-                        android:id="@+id/number_edit"
+                        android:id="@+id/spinnertext2"
                         android:layout_width="219dp"
                         android:layout_height="30dp"
                         android:layout_weight="0"
@@ -211,6 +213,13 @@
                         android:gravity="center"
                         android:hint="참가 인원 설정"
                         android:paddingLeft="0dp" />
+
+                    <Spinner
+                        android:id="@+id/request_spinner1"
+                        android:layout_marginTop="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"/>
                 </LinearLayout>
 
             </LinearLayout>

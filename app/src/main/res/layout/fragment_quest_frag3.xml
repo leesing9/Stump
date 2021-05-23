@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/radius"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="230dp"
+                                                android:layout_margin="10dp"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/imageView4"
+                                                    android:layout_width="180dp"
+                                                    android:layout_height="180dp"
+                                                    android:src="@drawable/quest_1" />
+
+                                                <TextView
+                                                    android:id="@+id/textView23"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:text="오늘 내 패션 어때?\n나만의 인생화보 만들기"
+                                                    android:textColor="#000000" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="230dp"
+                                                android:layout_margin="10dp"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:layout_width="180dp"
+                                                    android:layout_height="180dp"
+                                                    android:src="@drawable/quest_2" />
+
+                                                <TextView
+                                                    android:id="@+id/textView71"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:text="종이 그림 말고 디지털 드로\n잉! 나만의 이모티콘 만들기"
+                                                    android:textColor="#000000" />
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:onClick="mOnClick_questexam1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="230dp"
+                                                android:layout_margin="10dp"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:layout_width="180dp"
+                                                    android:layout_height="180dp"
+                                                    android:src="@drawable/quest_3" />
+
+                                                <TextView
+                                                    android:id="@+id/textView21"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:text="영상편집 배워서\n브이로그 찍기"
+                                                    android:textColor="#000000" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="230dp"
+                                                android:layout_margin="10dp"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:layout_width="180dp"
+                                                    android:layout_height="180dp"
+                                                    android:src="@drawable/quest_4" />
+
+                                                <TextView
+                                                    android:id="@+id/textView22"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:text="하루 한 번 내 일상 기록하기"
+                                                    android:textColor="#000000" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -17,14 +17,17 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#007FDD"
+        android:background="@drawable/menubar_radius"
         android:elevation="2dp"
+        app:abb_indicatorAppearance="round"
         app:abb_animationDuration="600"
-        app:abb_indicatorColor="#fd907e"
+        app:abb_rippleColor="#4C6BFD"
+        app:abb_indicatorColor="#4C6BFD"
         app:abb_selectedIndex="1"
         app:abb_tabAnimation="fade"
-        app:abb_tabColor="#FFFFFF"
-        app:abb_tabColorSelected="#fd907e"
+        app:abb_indicatorHeight="4dp"
+        app:abb_tabColor="#222222"
+        app:abb_tabColorSelected="#4C6BFD"
         app:abb_tabs="@menu/menu" />
 
 </RelativeLayout>

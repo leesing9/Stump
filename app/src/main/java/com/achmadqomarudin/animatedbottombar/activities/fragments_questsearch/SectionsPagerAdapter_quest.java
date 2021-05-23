@@ -5,6 +5,7 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.achmadqomarudin.animatedbottombar.R;
 import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment;
@@ -13,7 +14,7 @@ import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment;
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter_quest extends FragmentPagerAdapter {
+public class SectionsPagerAdapter_quest extends FragmentStatePagerAdapter {
 
     @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.tab_questsearch_1, R.string.tab_questsearch_2, R.string.tab_questsearch_3};
@@ -36,9 +37,9 @@ public class SectionsPagerAdapter_quest extends FragmentPagerAdapter {
             case 2:
                 SearchFragment_frag3 searchfragment_frag3 = new SearchFragment_frag3();
                 return searchfragment_frag3;
-
             default:
-                return null;
+                SearchFragment_frag_ searchfragment_frag_ = new SearchFragment_frag_();
+                return searchfragment_frag_;
 
         }
 

@@ -1,9 +1,12 @@
 package com.achmadqomarudin.animatedbottombar.activities;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +20,7 @@ import com.achmadqomarudin.animatedbottombar.fragments.HomeFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.QuestFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.RequestFragment;
+import com.google.android.material.tabs.TabLayout;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -26,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     AnimatedBottomBar animatedBottomBar;
     FragmentManager fragmentManager;
+
+    TabLayout tabLayout;
+    ViewPager viewPager;
+    PagerAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,6 +107,16 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent2 = new Intent(this, SearchquestActivity.class);
         startActivityForResult(intent2, 1);
+    }
+    //버튼
+
+
+
+    public void mOnClick_questexam1(View v) {
+        //데이터 담아서 팝업(액티비티) 호출
+
+        Intent intent = new Intent(this, QuestActivity_exam1.class);
+        startActivityForResult(intent, 1);
     }
     //버튼
 }

@@ -1,20 +1,16 @@
 <resources>
     <string name="app_name">오팔</string>
 
-<string name="automatic_data">메신저</string>
-<string name="permission_title">나이가 다냐, 나처럼 살아봐!</string>
-<string name="permission_detail">취미를 나눌 수 있는 사람들을 모아서\n세상 취미 모임을 만들어 보세요!</string>
-<string name="choose_the_song">즐거운 하루 보내기</string>
+<string name="automatic_data">함께 대화해요!</string>
+<string name="permission_title">함께 도전해요!</string>
+<string name="permission_detail">취다양한 분야의 챌린지를  만들고\n자유롭게 참여해보세요!</string>
+<string name="choose_the_song">함께 시작해요!</string>
 <string name="edit_data">익은 벼는 고개를 숙인다</string>
-<string name="result_awesome">Result is awesome!</string>
-<string name="continue_and_learn">배움은 끝이 없다</string>
 <string name="continue_and_update"></string>
 <string name="continue_and_result"></string>
 <string name="thank_you">재밌게노세요</string>
-<string name="gm_finds_photos">나다라마바사아나다라마바사아나다라마바사아나다라마바사아나다라마바사아나다라마바사아나다라마바사아나다라마바사아나다라마바사아나다라마바사아나다라마바사아.</string>
-<string name="swap_to_the_tab">재밌다 신난다 재밌다 신난다재밌다 신난다재밌다 신난다재밌다 신난다재밌다 신난다재밌다 신난다재밌다 신난다재밌다 신난다</string>
-<string name="update_easily">오팔청춘 즐깁시다</string>
-<string name="after_updating">바람처럼 왔다 가자</string>
+<string name="gm_finds_photos">공통된 관심사로 다양한 사람들과\n 소통하고 교류해보세요!</string>
+<string name="swap_to_the_tab">인증샷을 공유하며 \n서로 응원과 피드백을 주고 받아요!</string>
 
         <string name="tab_text_1">참여중</string>
         <string name="tab_text_2">참여완료</string>
@@ -24,4 +20,29 @@
     <string name="tab_questsearch_1">최근 검색</string>
     <string name="tab_questsearch_2">상세 범위</string>
     <string name="tab_questsearch_3">가격 범위</string>
+
+    <string name="tab_questexam1_1">설명</string>
+    <string name="tab_questexam1_2">커뮤니티</string>
+    <string name="tab_questexam1_3">후기</string>
+
+    <string-array name="request_array1">
+        <item>운동</item>
+        <item>외국어</item>
+        <item>공예</item>
+        <item>뷰티</item>
+        <item>크리에이터</item>
+        <item>컴퓨터</item>
+        <item>라이프</item>
+        <item>재테크</item>
+        <item>요리</item>
+    </string-array>
+
+
+    <string-array name="request_array2">
+        <item>5인 이하</item>
+        <item>5~10인</item>
+        <item>10~20인</item>
+        <item>20~30인</item>
+        <item>30인 이상</item>
+    </string-array>
 </resources>

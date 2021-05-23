@@ -40,7 +40,7 @@
         <activity android:name=".activities.OnboardingActivity"></activity>
         <activity android:name=".activities.RequestPopupActivity" android:theme="@android:style/Theme.Translucent"/>
         <activity android:name=".activities.fragments_questsearch.SearchquestActivity"></activity>
-
+        <activity android:name=".activities.QuestActivity_exam1"></activity>
         </application>
 
 </manifest>

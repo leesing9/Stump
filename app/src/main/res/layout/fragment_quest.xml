@@ -18,13 +18,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="150dp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
+                    android:layout_height="233dp"
                     android:gravity="center|left"
                     android:orientation="vertical">
 
@@ -35,12 +34,12 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:onClick="mOnClick_searchquest"
                             android:layout_width="330dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:background="@drawable/btn_input"
                             android:gravity="center"
+                            android:onClick="mOnClick_searchquest"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -76,340 +75,51 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center|left"
-                        android:orientation="horizontal">
-
-                        <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="80dp"
-                                        android:layout_height="90dp"
-                                        android:gravity="center"
-                                        android:onClick="mOnPopupClick_Questtab1"
-                                        android:orientation="vertical">
-
-                                        <ImageView
-                                            android:id="@+id/login2tab1"
-                                            android:layout_width="66dp"
-                                            android:layout_height="66dp"
-                                            app:srcCompat="@drawable/quest_icon1" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1"
-                                            android:text="운동"
-                                            android:textColor="#000000" />
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="80dp"
-                                        android:layout_height="90dp"
-                                        android:gravity="center"
-                                        android:onClick="mOnPopupClick_Questtab2"
-                                        android:orientation="vertical">
-
-                                        <ImageView
-                                            android:id="@+id/login2tab2"
-                                            android:layout_width="66dp"
-                                            android:layout_height="66dp"
-                                            app:srcCompat="@drawable/quest_icon2" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1"
-                                            android:text="외국어"
-                                            android:textColor="#000000" />
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="80dp"
-                                        android:layout_height="90dp"
-                                        android:gravity="center"
-                                        android:onClick="mOnPopupClick_Questtab3"
-                                        android:orientation="vertical">
-
-                                        <ImageView
-                                            android:id="@+id/login2tab3"
-                                            android:layout_width="66dp"
-                                            android:layout_height="66dp"
-                                            app:srcCompat="@drawable/quest_icon3" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1"
-                                            android:text="공예·예술"
-                                            android:textColor="#000000" />
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="80dp"
-                                        android:layout_height="90dp"
-                                        android:gravity="center"
-                                        android:onClick="mOnPopupClick_Questtab4"
-                                        android:orientation="vertical">
-
-                                        <ImageView
-                                            android:id="@+id/login2tab4"
-                                            android:layout_width="66dp"
-                                            android:layout_height="66dp"
-                                            app:srcCompat="@drawable/quest_icon4" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1"
-                                            android:text="뷰티·패션"
-                                            android:textColor="#000000" />
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="80dp"
-                                        android:layout_height="90dp"
-                                        android:gravity="center"
-                                        android:onClick="mOnPopupClick_Questtab5"
-                                        android:orientation="vertical">
-
-                                        <ImageView
-                                            android:id="@+id/login2tab5"
-                                            android:layout_width="66dp"
-                                            android:layout_height="66dp"
-                                            app:srcCompat="@drawable/quest_icon5" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1"
-                                            android:text="크리에이터"
-                                            android:textColor="#000000" />
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="80dp"
-                                        android:layout_height="90dp"
-                                        android:gravity="center"
-                                        android:onClick="mOnPopupClick_Questtab6"
-                                        android:orientation="vertical">
-
-                                        <ImageView
-                                            android:id="@+id/login2tab6"
-                                            android:layout_width="66dp"
-                                            android:layout_height="66dp"
-                                            app:srcCompat="@drawable/quest_icon6" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1"
-                                            android:text="IT·컴퓨터"
-                                            android:textColor="#000000" />
-
-                                    </LinearLayout>
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </HorizontalScrollView>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/radius"
                         android:orientation="vertical">
 
-                        <LinearLayout
+                        <HorizontalScrollView
+                            android:scrollbars="none"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:layout_height="110dp">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            <com.google.android.material.appbar.AppBarLayout
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:orientation="vertical">
+                                android:background="#FFFFFF">
 
-                                <LinearLayout
+                                <com.google.android.material.tabs.TabLayout
+                                    android:id="@+id/tabs"
+                                    style="@style/MyCustomTabLayout"
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_margin="20dp"
-                                    android:orientation="vertical">
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/questbar_radius"
+                                    app:tabIndicatorColor="#4C6BFD"
+                                    app:tabPadding="3dp"
+                                    app:tabRippleColor="#CCCCCC" />
 
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <TextView
-                                                android:id="@+id/textView3"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:text="건강한 몸에 건강한 정신이 깃든다!"
-                                                android:textSize="14sp"
-                                                android:textStyle="bold" />
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:orientation="horizontal">
-
-                                                <TextView
-                                                    android:id="@+id/textView7"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_marginLeft="10dp"
-                                                    android:text="몸 튼튼 마음 튼튼"
-                                                    android:textSize="14sp"
-                                                    android:textStyle="bold" />
-
-                                                <ImageView
-                                                    android:id="@+id/imageView7"
-                                                    android:layout_width="20dp"
-                                                    android:layout_height="20dp"
-                                                    android:src="@drawable/quest_arm_icon"
-                                                    android:textSize="20sp" />
-                                            </LinearLayout>
-
-                                        </LinearLayout>
-
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:gravity="right"
-                                            android:orientation="horizontal"/>
-
-                                    </LinearLayout>
-
-                                    <HorizontalScrollView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <LinearLayout
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:gravity="center"
-                                                android:orientation="horizontal">
-
-                                                <ImageView
-                                                    android:id="@+id/imageView4"
-                                                    android:layout_width="200dp"
-                                                    android:layout_height="200dp"
-                                                    android:src="@drawable/quest_01" />
-
-                                                <ImageView
-                                                    android:layout_width="200dp"
-                                                    android:layout_height="200dp"
-                                                    android:src="@drawable/quest_02" />
-                                            </LinearLayout>
-                                        </LinearLayout>
-                                    </HorizontalScrollView>
-
-                                </LinearLayout>
-
-                                <LinearLayout
+                                <View
+                                    android:id="@+id/view"
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_margin="20dp"
-                                    android:orientation="vertical">
+                                    android:layout_height="2dp"
+                                    android:background="#BBFFFFFD" />
 
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                            </com.google.android.material.appbar.AppBarLayout>
+                        </HorizontalScrollView>
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="오늘부터 나도 방구석 연예인"
-                                            android:textSize="16sp"
-                                            android:textStyle="bold" />
-
-                                        <ImageView
-                                            android:id="@+id/imageView17"
-                                            android:layout_width="20dp"
-                                            android:layout_height="20dp"
-                                            android:src="@drawable/quest_woman_icon"
-                                            android:textSize="20sp" />
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:gravity="right"
-                                            android:orientation="horizontal"/>
-
-                                    </LinearLayout>
-
-                                    <HorizontalScrollView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <LinearLayout
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="match_parent"
-                                            android:gravity="center"
-                                            android:orientation="horizontal">
-
-                                            <ImageView
-                                                android:layout_width="200dp"
-                                                android:layout_height="200dp"
-                                                android:src="@drawable/quest_03" />
-
-                                            <ImageView
-                                                android:layout_width="200dp"
-                                                android:layout_height="200dp"
-                                                android:src="@drawable/quest_04" />
-
-                                        </LinearLayout>
-                                    </HorizontalScrollView>
-
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                        </LinearLayout>
                     </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="509dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"></androidx.viewpager.widget.ViewPager>
+
+
         </LinearLayout>
     </ScrollView>
 
