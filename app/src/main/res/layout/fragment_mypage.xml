@@ -56,12 +56,11 @@
 
                         </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/imageView14"
+                        <Button
+                            android:onClick="mOnClick_mypageconfig"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/setting_icon"
-                            android:textSize="20sp" />
+                            android:background="@drawable/setting_icon" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -143,7 +142,7 @@
                     android:id="@+id/view"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#9A9494" />
+                    android:background="@drawable/bottom_shadow" />
 
             </com.google.android.material.appbar.AppBarLayout>
 

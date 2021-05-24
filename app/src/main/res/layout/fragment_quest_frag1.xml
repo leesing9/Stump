@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity"
-    android:background="#FFFFFF">
+    android:background="@drawable/radius">
 
     <ScrollView
         android:scrollbars="none"
@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
@@ -35,7 +35,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -97,14 +97,14 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:gravity="right"
-                                            android:orientation="horizontal"/>
+                                            android:orientation="horizontal" />
 
                                     </LinearLayout>
 
                                     <HorizontalScrollView
-                                        android:scrollbars="none"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:scrollbars="none">
 
                                         <LinearLayout
                                             android:layout_width="wrap_content"
@@ -162,14 +162,14 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:gravity="right"
-                                            android:orientation="horizontal"/>
+                                            android:orientation="horizontal" />
 
                                     </LinearLayout>
 
                                     <HorizontalScrollView
-                                        android:scrollbars="none"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:scrollbars="none">
 
                                         <LinearLayout
                                             android:layout_width="wrap_content"

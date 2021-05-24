@@ -15,16 +15,17 @@
 
 
         <LinearLayout
-            android:layout_width="280dp"
-            android:layout_height="164dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
             android:gravity="center"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:layout_height="70dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -42,6 +43,7 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
+
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
@@ -84,34 +86,36 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:background="@drawable/radius_facebook"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:onClick="mOnPopupClick_facebook"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView10"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="28dp"
                     app:srcCompat="@drawable/icon_facebook" />
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="25dp"
                     android:text="페이스북 계정으로 로그인"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:textSize="18sp" />
+            </FrameLayout>
 
-            <LinearLayout
+            <FrameLayout
 
                 android:onClick="mOnPopupClick_naver"
                 android:layout_width="match_parent"
@@ -124,20 +128,22 @@
 
                 <ImageView
                     android:id="@+id/imageView11"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="28dp"
                     app:srcCompat="@drawable/icon_naver" />
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="25dp"
                     android:text="네이버 계정으로 로그인"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:textSize="18sp" />
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

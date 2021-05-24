@@ -40,7 +40,12 @@
         <activity android:name=".activities.OnboardingActivity"></activity>
         <activity android:name=".activities.RequestPopupActivity" android:theme="@android:style/Theme.Translucent"/>
         <activity android:name=".activities.fragments_questsearch.SearchquestActivity"></activity>
-        <activity android:name=".activities.QuestActivity_exam1"></activity>
+        <activity android:name=".activities.exam1.QuestActivity_exam1_tab1"></activity>
+        <activity android:name=".activities.exam1.QuestActivity_exam1_tab2"></activity>
+        <activity android:name=".activities.exam1.QuestActivity_exam1_tab3"></activity>
+        <activity android:name=".activities.exam1.CommentPopupActivity_exam1_tab2" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".activities.exam1.ReviewPopupActivity_exam1_tab3" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".activities.exam1.AuthPopupActivity_exam1_tab2" android:theme="@android:style/Theme.Translucent"/>
         </application>
 
 </manifest>

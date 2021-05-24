@@ -1,6 +1,5 @@
 package com.achmadqomarudin.animatedbottombar.activities;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -14,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.achmadqomarudin.animatedbottombar.R;
+import com.achmadqomarudin.animatedbottombar.activities.exam1.QuestActivity_exam1_tab1;
 import com.achmadqomarudin.animatedbottombar.activities.fragments_questsearch.SearchquestActivity;
 import com.achmadqomarudin.animatedbottombar.fragments.CommunityFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.HomeFragment;
@@ -21,6 +21,8 @@ import com.achmadqomarudin.animatedbottombar.fragments.MypageFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.QuestFragment;
 import com.achmadqomarudin.animatedbottombar.fragments.RequestFragment;
 import com.google.android.material.tabs.TabLayout;
+import com.kakao.usermgmt.UserManagement;
+import com.kakao.usermgmt.callback.LogoutResponseCallback;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -115,8 +117,24 @@ public class MainActivity extends AppCompatActivity {
     public void mOnClick_questexam1(View v) {
         //데이터 담아서 팝업(액티비티) 호출
 
-        Intent intent = new Intent(this, QuestActivity_exam1.class);
+        Intent intent = new Intent(this, QuestActivity_exam1_tab1.class);
         startActivityForResult(intent, 1);
     }
     //버튼
+
+    public void mOnClick_mypageconfig(View v) {
+        //데이터 담아서 팝업(액티비티) 호출
+
+        UserManagement.getInstance().requestLogout(new LogoutResponseCallback() {
+            @Override
+            public void onCompleteLogout() {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+    }
+    //버튼
+
+
 }

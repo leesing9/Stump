@@ -1,6 +1,5 @@
 package com.achmadqomarudin.animatedbottombar.activities.fragments_questtheme;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,9 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.achmadqomarudin.animatedbottombar.R;
-import com.achmadqomarudin.animatedbottombar.activities.MainActivity;
-import com.achmadqomarudin.animatedbottombar.activities.QuestActivity_exam1;
-import com.achmadqomarudin.animatedbottombar.activities.fragments_questsearch.SearchquestActivity;
 
 
 /**

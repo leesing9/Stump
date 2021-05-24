@@ -25,5 +25,5 @@
     <item
         android:id="@+id/mypage"
         android:icon="@drawable/book"
-        android:title="마이" />
+        android:title="내 정보" />
 </menu>
