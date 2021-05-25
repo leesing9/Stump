@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="0dp"
+    android:layout_gravity="bottom"
     android:background="@drawable/radius3"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
@@ -166,7 +166,6 @@
             android:id="@+id/editText8"
             android:layout_width="match_parent"
             android:layout_height="247dp"
-            android:layout_weight="0"
             android:background="@drawable/btn_input"
             android:backgroundTint="#E5E5E5"
             android:gravity="top"

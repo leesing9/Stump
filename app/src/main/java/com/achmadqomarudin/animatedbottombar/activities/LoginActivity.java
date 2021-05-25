@@ -71,9 +71,8 @@ public class LoginActivity extends AppCompatActivity {
                     intent.putExtra("profile", result.getProfileImagePath());
 
                     KakaoUser.nickname=result.getNickname();
-                    KakaoUser.profile=result.getProfileImagePath();
 
-                    Toast.makeText(getApplicationContext(),"접속 완료 : " + result.getNickname(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), result.getNickname() + "님, 환영합니다.",Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                     finish();
                 }

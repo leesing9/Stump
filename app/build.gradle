@@ -1,6 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'build.xml'
+    }
+    useLibrary 'org.apache.http.legacy'
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
     defaultConfig {
@@ -41,4 +52,6 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }

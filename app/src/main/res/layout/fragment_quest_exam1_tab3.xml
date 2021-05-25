@@ -138,7 +138,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:onClick="mOnClick_exam1_tab2_tab3"
                                 android:orientation="vertical">
 
                                 <TextView
