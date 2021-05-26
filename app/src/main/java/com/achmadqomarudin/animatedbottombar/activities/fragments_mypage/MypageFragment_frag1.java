@@ -1,6 +1,8 @@
 package com.achmadqomarudin.animatedbottombar.activities.fragments_mypage;
 
 import android.app.ProgressDialog;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -186,6 +188,7 @@ public class MypageFragment_frag1 extends Fragment {
         String TAG_DATE = "date";
         String TAG_CONTEXT = "context";
         String TAG_KAKAONAME = "kakaoname";
+        String TAG_IMAGE = "image";
 
         try {
             JSONObject jsonObject = new JSONObject(mJsonString);
@@ -199,6 +202,7 @@ public class MypageFragment_frag1 extends Fragment {
                 String date = item.getString(TAG_DATE);
                 String context = item.getString(TAG_CONTEXT);
                 String kakaoname = item.getString(TAG_KAKAONAME);
+                String image = item.getString(TAG_IMAGE);
 
                 KakaoUser personalData = new KakaoUser();
 
@@ -206,6 +210,10 @@ public class MypageFragment_frag1 extends Fragment {
                 personalData.setMember_date(date);
                 personalData.setMember_context(context);
                 personalData.setMember_kakaoname(kakaoname);
+                Bitmap bmp = BitmapFactory.decodeByteArray(image.getBytes(),0,image.length());
+                personalData.setMember_image(bmp);
+
+
 
                 mArrayList.add(personalData);
                 mAdapter.notifyDataSetChanged();
@@ -219,4 +227,5 @@ public class MypageFragment_frag1 extends Fragment {
 
 
     }
+
 }

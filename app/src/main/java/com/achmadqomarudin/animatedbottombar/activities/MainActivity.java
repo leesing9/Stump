@@ -12,14 +12,21 @@ import androidx.viewpager.widget.ViewPager;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +54,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -65,6 +74,7 @@ public class MainActivity extends AppCompatActivity{
     AnimatedBottomBar animatedBottomBar;
     FragmentManager fragmentManager;
 
+    ImageView createquest_image;
     EditText createquest_title;
     EditText createquest_date;
     EditText createquest_context;
@@ -118,6 +128,23 @@ public class MainActivity extends AppCompatActivity{
                 }
             }
         });
+    }
+
+    public static String byteArrayToBinaryString(byte[] b) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < b.length; ++i) {
+            sb.append(byteToBinaryString(b[i]));
+        }
+        return sb.toString();
+    }
+
+    public static String byteToBinaryString(byte n) {
+        StringBuilder sb = new StringBuilder("00000000");
+        for (int bit = 0; bit < 8; bit++) {
+            if (((n >> bit) & 1) > 0) {
+                sb.setCharAt(7 - bit, '1');
+            }
+        } return sb.toString();
     }
 
     public void mOnPopupClick_setgps(View v) {
@@ -180,13 +207,22 @@ public class MainActivity extends AppCompatActivity{
         createquest_title = (EditText)findViewById(R.id.createquest_title);
         createquest_date = (EditText)findViewById(R.id.createquest_date);
         createquest_context = (EditText)findViewById(R.id.createquest_context);
+        createquest_image = findViewById(R.id.createquest_image);
 
         String title = createquest_title.getText().toString();
         String date = createquest_date.getText().toString();
         String context = createquest_context.getText().toString();
 
+        BitmapDrawable drawable = (BitmapDrawable) createquest_image.getDrawable();
+        Bitmap bitmap = drawable.getBitmap();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+        byte[] bytes = baos.toByteArray();
+        String image = byteArrayToBinaryString(bytes);
+
+
         InsertData task = new InsertData();
-        task.execute("http://" + IP_ADDRESS + "/insert.php", title,date,context);
+        task.execute("http://" + IP_ADDRESS + "/insert.php", title,date,context,"",image);
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
@@ -223,9 +259,10 @@ public class MainActivity extends AppCompatActivity{
             String date = (String) params[2];
             String context = (String) params[3];
             String kakaoname = (String) params[4];
+            String image = (String) params[5];
 
             String serverURL = (String) params[0];
-            String postParameters = "title=" + title + "&date=" + date + "&context=" + context + "&kakaoname=" + kakaoname;
+            String postParameters = "title=" + title + "&date=" + date + "&context=" + context + "&kakaoname=" + kakaoname + "&image=" + image;
 
 
             try {
@@ -283,5 +320,9 @@ public class MainActivity extends AppCompatActivity{
 
         }
     }
+
+
+
+
 
 }

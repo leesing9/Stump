@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.CustomViewHo
         protected TextView kakaoname;
         protected TextView date;
         protected TextView context;
-
+        protected ImageView image;
 
 
         public CustomViewHolder(View view) {
@@ -35,6 +36,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.CustomViewHo
             this.kakaoname = (TextView) view.findViewById(R.id.textView_list_kakaoname);
             this.date = (TextView) view.findViewById(R.id.textView_list_date);
             this.context = (TextView) view.findViewById(R.id.textView_list_context);
+            this.image = (ImageView) view.findViewById(R.id.textView_list_image);
         }
     }
 

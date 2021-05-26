@@ -59,15 +59,6 @@
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <TextView
-                                                android:id="@+id/textView3"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:text="건강한 몸에 건강한 정신이 깃든다!"
-                                                android:textSize="14sp"
-                                                android:textStyle="bold" />
-
                                             <LinearLayout
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
@@ -78,16 +69,10 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="10dp"
-                                                    android:text="몸 튼튼 마음 튼튼"
+                                                    android:text="한달만에 완성하는 풍경 앨범 찍기"
                                                     android:textSize="14sp"
                                                     android:textStyle="bold" />
 
-                                                <ImageView
-                                                    android:id="@+id/imageView7"
-                                                    android:layout_width="20dp"
-                                                    android:layout_height="20dp"
-                                                    android:src="@drawable/quest_arm_icon"
-                                                    android:textSize="20sp" />
                                             </LinearLayout>
 
                                         </LinearLayout>
@@ -121,12 +106,12 @@
                                                     android:id="@+id/imageView4"
                                                     android:layout_width="200dp"
                                                     android:layout_height="200dp"
-                                                    android:src="@drawable/quest_01" />
+                                                    android:src="@drawable/quest17" />
 
                                                 <ImageView
                                                     android:layout_width="200dp"
                                                     android:layout_height="200dp"
-                                                    android:src="@drawable/quest_02" />
+                                                    android:src="@drawable/quest18" />
                                             </LinearLayout>
                                         </LinearLayout>
                                     </HorizontalScrollView>
@@ -147,16 +132,10 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="오늘부터 나도 방구석 연예인"
+                                            android:text="한 달에 책 한권 마음의 양식 쌓기"
                                             android:textSize="16sp"
                                             android:textStyle="bold" />
 
-                                        <ImageView
-                                            android:id="@+id/imageView17"
-                                            android:layout_width="20dp"
-                                            android:layout_height="20dp"
-                                            android:src="@drawable/quest_woman_icon"
-                                            android:textSize="20sp" />
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -180,12 +159,12 @@
                                             <ImageView
                                                 android:layout_width="200dp"
                                                 android:layout_height="200dp"
-                                                android:src="@drawable/quest_03" />
+                                                android:src="@drawable/quest19" />
 
                                             <ImageView
                                                 android:layout_width="200dp"
                                                 android:layout_height="200dp"
-                                                android:src="@drawable/quest_04" />
+                                                android:src="@drawable/quest5" />
 
                                         </LinearLayout>
                                     </HorizontalScrollView>

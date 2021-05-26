@@ -1,5 +1,7 @@
 package com.achmadqomarudin.animatedbottombar;
 
+import android.graphics.Bitmap;
+
 public class KakaoUser {
 
     public static String nickname;
@@ -11,6 +13,7 @@ public class KakaoUser {
     private String member_title;
     private String member_context;
     private String member_date;
+    private Bitmap member_image;
 
     public KakaoUser(){
 
@@ -39,6 +42,10 @@ public class KakaoUser {
         return member_kakaoname;
     }
 
+    public Bitmap getMember_image() {
+        return member_image;
+    }
+
     public void setMember_id(String member_id) {
         this.member_id = member_id;
     }
@@ -56,5 +63,9 @@ public class KakaoUser {
     }
     public void setMember_kakaoname(String member_kakaoname) {
         this.member_kakaoname = member_kakaoname;
+    }
+
+    public void setMember_image(Bitmap member_image) {
+        this.member_image = member_image;
     }
 }

@@ -19,6 +19,7 @@ package com.achmadqomarudin.animatedbottombar.activities;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -38,6 +39,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.List;
+
+import static com.kakao.auth.KakaoSDK.getCurrentActivity;
+
 /**
  * Demonstrates how to create and remove geofences using the GeofencingApi. Uses an IntentService
  * to monitor geofence transitions and creates notifications whenever a device enters or exits
@@ -62,7 +66,6 @@ public class SetgpsActivity extends AppCompatActivity implements OnMapReadyCallb
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.place_register);
 
         placeadd_btn = findViewById(R.id.placeadd_btn);
@@ -70,6 +73,7 @@ public class SetgpsActivity extends AppCompatActivity implements OnMapReadyCallb
 
         button = findViewById(R.id.button);
         button.setOnClickListener(this);
+
 
         // 배경 어둡게
         WindowManager.LayoutParams lpWindow = new WindowManager.LayoutParams();
@@ -84,7 +88,6 @@ public class SetgpsActivity extends AppCompatActivity implements OnMapReadyCallb
 
 
     }
-
     public void onMapReady(final GoogleMap googleMap) {
         mMap = googleMap;
         geocoder = new Geocoder(this);

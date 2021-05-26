@@ -103,6 +103,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
+                            android:onClick="mOnClick_createquest_setimage"
                             android:layout_width="105dp"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
