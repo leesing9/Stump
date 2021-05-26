@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity{
     EditText createquest_title;
     EditText createquest_date;
     EditText createquest_context;
-    private static String IP_ADDRESS = "192.168.0.78";
+    private static String IP_ADDRESS = "172.30.1.59";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,7 +162,17 @@ public class MainActivity extends AppCompatActivity{
         });
     }
     //버튼
+    public void mOnClick_mypagetoexam1(View v) {
+        //데이터 담아서 팝업(액티비티) 호출
 
+        UserManagement.getInstance().requestLogout(new LogoutResponseCallback() {
+            @Override
+            public void onCompleteLogout() {
+                Intent intent = new Intent(MainActivity.this, QuestActivity_exam1_tab1.class);
+                startActivity(intent);
+            }
+        });
+    }
 
     public void mOnClick_createquest(View v) {
         //데이터 담아서 팝업(액티비티) 호출
@@ -174,7 +184,6 @@ public class MainActivity extends AppCompatActivity{
         String title = createquest_title.getText().toString();
         String date = createquest_date.getText().toString();
         String context = createquest_context.getText().toString();
-        String kakaoname = KakaoUser.nickname;
 
         InsertData task = new InsertData();
         task.execute("http://" + IP_ADDRESS + "/insert.php", title,date,context);
@@ -213,7 +222,7 @@ public class MainActivity extends AppCompatActivity{
             String title = (String) params[1];
             String date = (String) params[2];
             String context = (String) params[3];
-            String kakaoname = KakaoUser.nickname;
+            String kakaoname = (String) params[4];
 
             String serverURL = (String) params[0];
             String postParameters = "title=" + title + "&date=" + date + "&context=" + context + "&kakaoname=" + kakaoname;

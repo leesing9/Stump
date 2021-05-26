@@ -187,7 +187,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/exam1_review_context"
                 android:layout_width="match_parent"
                 android:layout_height="316dp"
                 android:layout_weight="0"
@@ -212,7 +212,7 @@
 
 
             <Button
-                android:id="@+id/placeadd_btn"
+                android:id="@+id/review_accept_btn"
                 android:layout_width="453dp"
                 android:layout_height="62dp"
                 android:layout_marginTop="0dp"

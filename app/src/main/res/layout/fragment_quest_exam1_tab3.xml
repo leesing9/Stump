@@ -641,7 +641,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
-                    android:orientation="vertical"></LinearLayout>
+                    android:orientation="vertical">
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="391dp"
@@ -659,23 +661,94 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
                             <LinearLayout
-                                android:layout_width="75dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:gravity="center"
                                 android:orientation="horizontal">
 
-                                <ImageView
-                                    android:id="@+id/imageView55"
-                                    android:layout_width="45dp"
-                                    android:layout_height="45dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/profile" />
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
 
+                                    <ImageView
+                                        android:id="@+id/imageView55"
+                                        android:layout_width="45dp"
+                                        android:layout_height="45dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/profile" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="34dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="67dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:padding="5dp">
+
+                                            <TextView
+                                                android:id="@+id/textView65"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:layout_weight="1"
+                                                android:gravity="center_vertical"
+                                                android:text="함박웃음"
+                                                android:textColor="#000000"
+                                                android:textStyle="bold" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView59"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="2021.05.29"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:gravity="left"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/imageView56"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0"
+                                            app:srcCompat="@drawable/star" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
                             </LinearLayout>
 
                             <LinearLayout
@@ -683,85 +756,28 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
-                                <LinearLayout
+                                <TextView
+                                    android:id="@+id/textView66"
                                     android:layout_width="match_parent"
-                                    android:layout_height="34dp"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="67dp"
-                                        android:layout_height="match_parent"
-                                        android:gravity="center"
-                                        android:orientation="horizontal"
-                                        android:padding="5dp">
-
-                                        <TextView
-                                            android:id="@+id/textView65"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:layout_weight="1"
-                                            android:gravity="center_vertical"
-                                            android:text="함박웃음"
-                                            android:textColor="#000000"
-                                            android:textStyle="bold" />
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_gravity="center"
-                                        android:gravity="center"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/textView59"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1"
-                                            android:text="2021.05.29"
-                                            android:textSize="14sp" />
-                                    </LinearLayout>
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_gravity="left"
-                                    android:gravity="left"
-                                    android:orientation="vertical">
+                                    android:padding="10dp"
+                                    android:text="길 가다가 예쁜 옷을 보면 어디서 산건지 궁금했던 적이 정말\n많아요. 그런데 나이 들어서 유난 떠는 것처럼 보일까봐 직접\n물어보지 못했죠. 여기서는 스스럼없이 서로 정보를 공유할 수\n있어서 너무 좋아요."
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
 
-                                    <ImageView
-                                        android:id="@+id/imageView56"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_weight="0"
-                                        app:srcCompat="@drawable/star" />
-
-                                </LinearLayout>
                             </LinearLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/textView66"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:padding="10dp"
-                                android:text="길 가다가 예쁜 옷을 보면 어디서 산건지 궁금했던 적이 정말\n 많아요. 그런데 나이 들어서 유난 떠는 것처럼 보일까봐 직접\n 물어보지 못했죠. 여기서는 스스럼없이 서로 정보를 공유할 수\n 있어서 너무 좋아요."
-                                android:textColor="#000000"
-                                android:textStyle="bold" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listView_main_list_review"
+                    android:layout_width="391dp"
+                    android:layout_height="match_parent" />
+
             </LinearLayout>
 
         </LinearLayout>

@@ -363,14 +363,12 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
-                            <ImageButton
-                                android:id="@+id/imageButton8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="#FFFFFF"
-                                android:src="@drawable/hear" />
-
+                            <com.like.LikeButton
+                                android:gravity="center"
+                                app:icon_type="heart"
+                                app:icon_size="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -520,13 +518,12 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
-                            <ImageButton
-                                android:id="@+id/imageButton10"
+                            <com.like.LikeButton
+                                android:gravity="center"
+                                app:icon_type="heart"
+                                app:icon_size="15dp"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
-                                android:background="#FFFFFF"
-                                android:src="@drawable/hear" />
+                                android:layout_height="match_parent"/>
 
                         </LinearLayout>
 
@@ -673,12 +670,13 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
-                            <ImageButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="#FFFFFF"
-                                android:src="@drawable/hear" />
+                            <com.like.LikeButton
+                                android:gravity="center"
+                                app:icon_type="heart"
+                                app:icon_size="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -706,6 +704,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="#D3D3D3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView_main_list_community" />
+
 
         </LinearLayout>
     </ScrollView>

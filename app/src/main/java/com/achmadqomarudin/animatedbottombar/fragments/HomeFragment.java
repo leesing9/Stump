@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.achmadqomarudin.animatedbottombar.KakaoUser;
 import com.achmadqomarudin.animatedbottombar.R;
 import com.achmadqomarudin.animatedbottombar.activities.SetgpsActivity;
 
@@ -30,13 +31,7 @@ public class HomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
         settext_place = v.findViewById(R.id.settext_place);
-
-        Intent intent = getActivity().getIntent();
-        if(intent.hasExtra("place")) {
-            String name = intent.getExtras().getString("place");
-            settext_place.setText(name);
-        }
-
+        if(KakaoUser.myplace!=null) {settext_place.setText(KakaoUser.myplace);}
         return v;
 
     }

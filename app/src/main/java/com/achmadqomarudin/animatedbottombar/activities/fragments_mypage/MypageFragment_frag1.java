@@ -47,16 +47,11 @@ import java.util.ArrayList;
 public class MypageFragment_frag1 extends Fragment {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-    private EditText mEditTextTitle;
-    private EditText mEditTextDate;
-    private EditText mEditTextContext;
-    private EditText mEditTextKakaoname;
     private ArrayList<KakaoUser> mArrayList;
     private QuestAdapter mAdapter;
     private RecyclerView mRecyclerView;
-    private EditText mEditTextSearchKeyword;
     private String mJsonString;
-    private static String IP_ADDRESS = "192.168.0.78";
+    private static String IP_ADDRESS = "172.30.1.59";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -190,6 +185,7 @@ public class MypageFragment_frag1 extends Fragment {
         String TAG_TITLE = "title";
         String TAG_DATE = "date";
         String TAG_CONTEXT = "context";
+        String TAG_KAKAONAME = "kakaoname";
 
         try {
             JSONObject jsonObject = new JSONObject(mJsonString);
@@ -202,7 +198,7 @@ public class MypageFragment_frag1 extends Fragment {
                 String title = item.getString(TAG_TITLE);
                 String date = item.getString(TAG_DATE);
                 String context = item.getString(TAG_CONTEXT);
-                String kakaoname = KakaoUser.nickname;
+                String kakaoname = item.getString(TAG_KAKAONAME);
 
                 KakaoUser personalData = new KakaoUser();
 

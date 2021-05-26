@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mypage_radius"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:onClick="mOnClick_mypagetoexam1">
 
     <ImageView
         android:layout_width="match_parent"

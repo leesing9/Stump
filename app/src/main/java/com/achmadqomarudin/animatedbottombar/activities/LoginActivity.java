@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 @Override
                 public void onSuccess(MeV2Response result) {
+                    Toast.makeText(getApplicationContext(), result.getNickname() + "님, 환영합니다.",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), Login2Activity.class);
                     intent.putExtra("name", result.getNickname());
                     intent.putExtra("profile", result.getProfileImagePath());
